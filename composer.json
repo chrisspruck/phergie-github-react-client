@@ -1,0 +1,51 @@
+{
+    "name": "phergie/phergie-irc-pluign-react-github",
+    "description": "Phergie plugin to let users pass a github repo and issues to get specific details",
+    "keywords": ["phergie", "irc", "github", "bot", "plugin"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Matt Trask",
+            "email": "mjftrask@gmail.com",
+            "homepage": "http://phergie.org",
+            "role": "developer"
+        },
+        {
+            "name": "Chris Spruck",
+            "homepage": "http://phergie.org",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "email": "mjftrask@gmail.com",
+        "irc": "irc://irc.freenode.net/phergie",
+        "issues": "https://github.com/phergie/phergie-irc-plugin-react-github/issues",
+        "source": "https://github.com/phergie/phergie-irc-plugin-react-github"
+    },
+    "require": {
+        "phergie/phergie-irc-bot-react": "1.3.*",
+        "phergie/phergie-irc-plugin-react-command": "1.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*",
+        "phake/phake": "2.0.0-beta2"
+    },
+    "suggest": {
+        "phergie/phergie-irc-plugin-react-commandhelp": "provides interactive help for commands"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phergie\\Irc\\Plugin\\React\\Github\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phergie\\Irc\\Tests\\Plugin\\React\\Github\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
